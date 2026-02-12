@@ -61,8 +61,8 @@
         <img src="img/logo.png" alt="KEMMA KFZ-Sachverständiger" class="logo-img">
       </a>
       <ul class="nav-links">
-        <li><a href="#services">Leistungen</a></li>
         <li><a href="#process">Ablauf</a></li>
+        <li><a href="#services">Leistungen</a></li>
         <li><a href="#about">Über uns</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>
@@ -92,8 +92,8 @@
       </button>
     </div>
     <ul class="mobile-nav-links">
-      <li><a href="#services">Leistungen</a></li>
       <li><a href="#process">Ablauf</a></li>
+      <li><a href="#services">Leistungen</a></li>
       <li><a href="#about">Über uns</a></li>
       <li><a href="#contact">Kontakt</a></li>
     </ul>
@@ -125,7 +125,7 @@
           </div>
           <div class="hero-check">
             <span class="hero-check-icon"><svg aria-hidden="true"><use href="#i-check"/></svg></span>
-            Unabhängig von Versicherungen
+            Kostenloser Rechtsbeistand
           </div>
         </div>
         <div class="hero-buttons">
@@ -138,12 +138,16 @@
             Rückruf anfordern
           </a>
         </div>
+        <div class="hero-trust-badge">
+          <img src="img/dgusv.png" alt="DGuSV" width="36" height="36">
+          <span>Mitglied im Deutschen Gutachter- und Sachverständigen Verband</span>
+        </div>
       </div>
 
       <!-- Hero Form -->
       <div class="hero-form-card">
         <h3 class="hero-form-title">Rückruf anfordern</h3>
-        <p class="hero-form-subtitle">Wir melden uns innerhalb von 2 Stunden.</p>
+        <p class="hero-form-subtitle">Wir melden uns schnellstmöglich bei Ihnen.</p>
         <form id="heroForm" novalidate>
           <div class="form-group">
             <label class="form-label" for="hero-name">Name</label>
@@ -173,7 +177,7 @@
               <svg aria-hidden="true"><use href="#i-check-circle"/></svg>
             </div>
             <h3>Anfrage erhalten!</h3>
-            <p>Wir melden uns innerhalb von 2 Stunden bei Ihnen.</p>
+            <p>Wir melden uns schnellstmöglich bei Ihnen.</p>
           </div>
         </form>
         <div class="hero-form-trust">
@@ -218,70 +222,6 @@
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-header-center reveal">
-        <div class="section-label">Leistungen</div>
-        <h2 class="section-title">Was wir für Sie tun</h2>
-      </div>
-
-      <div class="service-featured reveal">
-        <div class="service-featured-icon"><svg aria-hidden="true"><use href="#i-warning"/></svg></div>
-        <div class="service-featured-content">
-          <h3 class="service-featured-title">Unfallgutachten</h3>
-          <ul class="service-featured-list">
-            <li>Vollständiger Schadenumfang</li>
-            <li>Reparaturkosten &amp; Wertminderung</li>
-            <li>Nutzungsausfall &amp; Wiederbeschaffungswert</li>
-          </ul>
-        </div>
-        <div class="service-featured-badge">
-          <svg aria-hidden="true"><use href="#i-check"/></svg>
-          Kostenlos bei unverschuldetem Unfall
-        </div>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-card-icon"><svg aria-hidden="true"><use href="#i-search"/></svg></div>
-          <h3 class="service-card-title">Schadengutachten</h3>
-          <ul class="service-card-list">
-            <li>Vollständige Schadendokumentation</li>
-            <li>Grundlage für Reparatur oder Abrechnung</li>
-          </ul>
-        </div>
-        <div class="service-card reveal reveal-delay-1">
-          <div class="service-card-icon"><svg aria-hidden="true"><use href="#i-money"/></svg></div>
-          <h3 class="service-card-title">Wertgutachten</h3>
-          <ul class="service-card-list">
-            <li>Kauf / Verkauf</li>
-            <li>Versicherungseinstufung</li>
-            <li>Leasingrückgabe</li>
-            <li>Oldtimer &amp; Sonderfahrzeuge</li>
-          </ul>
-        </div>
-        <div class="service-card reveal reveal-delay-2">
-          <div class="service-card-icon"><svg aria-hidden="true"><use href="#i-calculator"/></svg></div>
-          <h3 class="service-card-title">Kostenvoranschläge</h3>
-          <ul class="service-card-list">
-            <li>Qualifizierte Reparaturkostenschätzung</li>
-            <li>Fundierte Entscheidungsgrundlage</li>
-          </ul>
-        </div>
-        <div class="service-card reveal reveal-delay-3">
-          <div class="service-card-icon"><svg aria-hidden="true"><use href="#i-location"/></svg></div>
-          <h3 class="service-card-title">Vor-Ort-Service</h3>
-          <ul class="service-card-list">
-            <li>Bei Ihnen zu Hause</li>
-            <li>In der Werkstatt</li>
-            <li>Am Standort des Fahrzeugs</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- PROCESS -->
   <section class="process" id="process">
     <div class="container">
@@ -315,64 +255,115 @@
     </div>
   </section>
 
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-layout">
+        <div class="services-header reveal">
+          <div class="section-label">Leistungen</div>
+          <h2 class="section-title">Unsere Gutachten</h2>
+          <p class="services-desc">Unabhängig, rechtssicher und immer in Ihrem Interesse.</p>
+        </div>
+        <div class="services-list">
+          <div class="service-row reveal">
+            <div class="service-row-icon"><svg aria-hidden="true"><use href="#i-warning"/></svg></div>
+            <div class="service-row-content">
+              <h3 class="service-row-title">Unfallgutachten</h3>
+              <p class="service-row-text">Schadenumfang, Reparaturkosten, Wertminderung &amp; Nutzungsausfall.</p>
+            </div>
+
+          </div>
+          <div class="service-row reveal reveal-delay-1">
+            <div class="service-row-icon"><svg aria-hidden="true"><use href="#i-search"/></svg></div>
+            <div class="service-row-content">
+              <h3 class="service-row-title">Schadengutachten</h3>
+              <p class="service-row-text">Vollständige Dokumentation als Grundlage für Reparatur oder Abrechnung.</p>
+            </div>
+          </div>
+          <div class="service-row reveal reveal-delay-2">
+            <div class="service-row-icon"><svg aria-hidden="true"><use href="#i-money"/></svg></div>
+            <div class="service-row-content">
+              <h3 class="service-row-title">Wertgutachten</h3>
+              <p class="service-row-text">Für Kauf, Verkauf, Versicherung, Leasingrückgabe &amp; Oldtimer.</p>
+            </div>
+          </div>
+          <div class="service-row reveal reveal-delay-3">
+            <div class="service-row-icon"><svg aria-hidden="true"><use href="#i-calculator"/></svg></div>
+            <div class="service-row-content">
+              <h3 class="service-row-title">Kostenvoranschläge</h3>
+              <p class="service-row-text">Qualifizierte Reparaturkostenschätzung als Entscheidungsgrundlage.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container">
-      <!-- Header -->
-      <div class="section-header-center reveal">
-        <div class="section-label">Über uns</div>
-        <h2 class="section-title">Erfahrung, der Sie vertrauen können</h2>
-        <p class="section-subtitle">Über ein Jahrzehnt unabhängige Fahrzeugbegutachtung – ausschließlich in Ihrem Interesse.</p>
-      </div>
+      <div class="about-grid">
+        <!-- Left: Text -->
+        <div class="about-text-col reveal">
+          <div class="section-label">Über uns</div>
+          <h2 class="section-title">Erfahrung, der Sie vertrauen können</h2>
+          <p class="about-desc">Hinter KEMMA steht über ein Jahrzehnt praktische Erfahrung im Kraftfahrzeugwesen. Dieses tiefgehende technische Verständnis für Fahrzeuge, Schadensbilder und Reparaturmethoden ist die Grundlage jedes unserer Gutachten.</p>
+          <p class="about-desc">Wir bewerten Schäden realistisch, schätzen Fahrzeugwerte marktgerecht ein und erstellen Gutachten, die präzise, nachvollziehbar und rechtssicher sind – immer in Ihrem Interesse.</p>
+          <ul class="about-list">
+            <li>
+              <svg aria-hidden="true"><use href="#i-check"/></svg>
+              Unabhängig von Versicherungen &amp; Werkstätten
+            </li>
+            <li>
+              <svg aria-hidden="true"><use href="#i-check"/></svg>
+              Kontinuierliche Weiterbildung &amp; höchster Qualitätsanspruch
+            </li>
+            <li>
+              <svg aria-hidden="true"><use href="#i-check"/></svg>
+              Persönlicher Ansprechpartner von Anfang bis Ende
+            </li>
+          </ul>
+        </div>
 
-      <!-- Stats -->
-      <div class="about-stats reveal">
-        <div class="about-stat">
-          <div class="about-stat-number">10+</div>
-          <div class="about-stat-label">Jahre Erfahrung</div>
-        </div>
-        <div class="about-stat">
-          <div class="about-stat-number">100%</div>
-          <div class="about-stat-label">Unabhängig</div>
-        </div>
-        <div class="about-stat">
-          <div class="about-stat-number">24h</div>
-          <div class="about-stat-label">Terminvergabe</div>
-        </div>
-      </div>
-
-      <!-- Two columns: Checklist + DGuSV -->
-      <div class="about-content reveal">
-        <ul class="about-list">
-          <li>
-            <svg aria-hidden="true"><use href="#i-check"/></svg>
-            Frei von Versicherungs- &amp; Werkstattinteressen
-          </li>
-          <li>
-            <svg aria-hidden="true"><use href="#i-check"/></svg>
-            Gerichtsfeste, nachvollziehbare Gutachten
-          </li>
-          <li>
-            <svg aria-hidden="true"><use href="#i-check"/></svg>
-            Regelmäßige Fortbildung &amp; Qualitätssicherung
-          </li>
-          <li>
-            <svg aria-hidden="true"><use href="#i-check"/></svg>
-            Persönlicher Ansprechpartner von Anfang bis Ende
-          </li>
-        </ul>
-        <div class="dgusv-card">
-          <img src="img/dgusv.png" alt="DGuSV – Geprüfter Sachverständiger" width="96" height="96">
-          <div class="dgusv-card-text">
-            <strong>Geprüft &amp; zertifiziert</strong>
-            <span>Mitglied im Deutschen Gutachter und Sachverständigen Verband e.V.</span>
+        <!-- Right: Proof -->
+        <div class="about-proof reveal reveal-delay-1">
+          <div class="about-image">
+            <img src="img/hero-unfall.jpg" alt="Unfallschaden – KEMMA KFZ-Sachverständiger hilft">
+          </div>
+          <div class="about-stats">
+            <div class="about-stat">
+              <div class="about-stat-number">10+</div>
+              <div class="about-stat-label">Jahre Erfahrung</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-number">100%</div>
+              <div class="about-stat-label">Unabhängig</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-number">24h</div>
+              <div class="about-stat-label">Terminvergabe</div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Highlight -->
-      <div class="about-highlight reveal">
-        Wir bewerten Schäden realistisch und erstellen Gutachten, die präzise und rechtssicher sind – damit Sie genau das bekommen, was Ihnen zusteht.
+      <!-- DGuSV Full Width -->
+      <div class="dgusv-banner reveal">
+        <div class="dgusv-banner-left">
+          <img src="img/dgusv.png" alt="DGuSV – Geprüfter Sachverständiger">
+          <div class="dgusv-banner-label">Ordentliches Mitglied</div>
+        </div>
+        <div class="dgusv-banner-divider"></div>
+        <div class="dgusv-banner-content">
+          <h3 class="dgusv-banner-title">Deutscher Gutachter- und Sachverständigen Verband</h3>
+          <p class="dgusv-banner-text">Die Mitgliedschaft im DGuSV steht für geprüfte fachliche Qualifikation und die Verpflichtung zu unabhängiger, objektiver Gutachtenerstellung nach geltenden Standards.</p>
+          <div class="dgusv-banner-tags">
+            <span class="dgusv-tag">Weisungsfreie Tätigkeit</span>
+            <span class="dgusv-tag">Nachvollziehbare Gutachten</span>
+            <span class="dgusv-tag">Regelmäßige Weiterbildung</span>
+            <span class="dgusv-tag">Verbandsgeprüfte Qualität</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -415,7 +406,7 @@
 
       <div class="contact-form-card reveal reveal-delay-1">
           <h3 class="contact-form-title">Rückruf anfordern</h3>
-          <p class="contact-form-subtitle">Wir melden uns innerhalb von 2 Stunden bei Ihnen.</p>
+          <p class="contact-form-subtitle">Wir melden uns schnellstmöglich bei Ihnen.</p>
           <form id="contactForm" novalidate>
             <div class="form-row">
               <div class="form-group">
@@ -451,7 +442,7 @@
                 <svg aria-hidden="true"><use href="#i-check-circle"/></svg>
               </div>
               <h3>Anfrage erhalten!</h3>
-              <p>Wir melden uns innerhalb von 2 Stunden bei Ihnen.</p>
+              <p>Wir melden uns schnellstmöglich bei Ihnen.</p>
             </div>
           </form>
         </div>
