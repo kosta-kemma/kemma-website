@@ -96,11 +96,12 @@
       }
 
       var formData = new FormData(form);
+      var encoded = new URLSearchParams(formData).toString();
 
-      fetch(form.action, {
+      fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(Object.fromEntries(formData))
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encoded
       })
       .then(function(response) {
         if (response.ok) {
