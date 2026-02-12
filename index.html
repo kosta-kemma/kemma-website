@@ -122,7 +122,7 @@
       <div class="hero-content">
         <div class="hero-badge">
           <svg aria-hidden="true"><use href="#i-shield"/></svg>
-          Unabhängig &amp; zertifiziert
+          Zertifizierter Sachverständiger DGuSV
         </div>
         <h1 class="hero-title">Unfall gehabt?<br>Wir sichern <span class="highlight">Ihre Ansprüche</span>.</h1>
         <p class="hero-text">Unabhängiges Gutachten – bei unverschuldetem Unfall für Sie kostenlos.</p>
@@ -166,7 +166,11 @@
       <div class="hero-form-card">
         <h3 class="hero-form-title">Rückruf anfordern</h3>
         <p class="hero-form-subtitle">Wir melden uns schnellstmöglich bei Ihnen.</p>
-        <form id="heroForm" novalidate>
+        <form id="heroForm" action="https://formsubmit.co/info@kemma-gutachten.de" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Neuer Rückruf (Hero) – KEMMA Website">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
           <div class="form-group">
             <label class="form-label" for="hero-name">Name</label>
             <input class="form-input" type="text" id="hero-name" name="name" placeholder="Ihr Name" required>
@@ -425,7 +429,11 @@
       <div class="contact-form-card reveal reveal-delay-1">
           <h3 class="contact-form-title">Rückruf anfordern</h3>
           <p class="contact-form-subtitle">Wir melden uns schnellstmöglich bei Ihnen.</p>
-          <form id="contactForm" novalidate>
+          <form id="contactForm" action="https://formsubmit.co/info@kemma-gutachten.de" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Neue Kontaktanfrage – KEMMA Website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none">
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="contact-name">Name</label>

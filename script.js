@@ -81,37 +81,59 @@
     reveals.forEach(function(el) { el.classList.add('visible'); });
   }
 
+  // -- Form Submit Handler --
+  function handleFormSubmit(form, successEl, hideSelectors) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var name = form.querySelector('[name="name"]').value.trim();
+      var phone = form.querySelector('[name="phone"]').value.trim();
+      if (!name || !phone) return;
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Wird gesendet...';
+      }
+
+      var formData = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(formData))
+      })
+      .then(function(response) {
+        if (response.ok) {
+          var els = form.querySelectorAll(hideSelectors);
+          els.forEach(function(el) { el.style.display = 'none'; });
+          successEl.classList.add('show');
+        } else {
+          throw new Error('Fehler');
+        }
+      })
+      .catch(function() {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Rückruf anfordern';
+        }
+        alert('Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder rufen Sie uns direkt an.');
+      });
+    });
+  }
+
   // -- Hero Form --
-  var heroForm = document.getElementById('heroForm');
-  var heroFormSuccess = document.getElementById('heroFormSuccess');
-
-  heroForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var name = heroForm.querySelector('#hero-name').value.trim();
-    var phone = heroForm.querySelector('#hero-phone').value.trim();
-
-    if (!name || !phone) return;
-
-    var formGroups = heroForm.querySelectorAll('.form-group, .btn');
-    formGroups.forEach(function(el) { el.style.display = 'none'; });
-    heroFormSuccess.classList.add('show');
-  });
+  handleFormSubmit(
+    document.getElementById('heroForm'),
+    document.getElementById('heroFormSuccess'),
+    '.form-group, .btn'
+  );
 
   // -- Contact Form --
-  var contactForm = document.getElementById('contactForm');
-  var contactFormSuccess = document.getElementById('contactFormSuccess');
-
-  contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var name = contactForm.querySelector('#contact-name').value.trim();
-    var phone = contactForm.querySelector('#contact-phone').value.trim();
-
-    if (!name || !phone) return;
-
-    var formGroups = contactForm.querySelectorAll('.form-group, .form-row, .btn, .contact-form-subtitle');
-    formGroups.forEach(function(el) { el.style.display = 'none'; });
-    contactFormSuccess.classList.add('show');
-  });
+  handleFormSubmit(
+    document.getElementById('contactForm'),
+    document.getElementById('contactFormSuccess'),
+    '.form-group, .form-row, .btn, .contact-form-subtitle'
+  );
 
   // -- Escape closes mobile menu --
   document.addEventListener('keydown', function(e) {
