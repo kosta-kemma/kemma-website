@@ -7,11 +7,12 @@
   <meta name="description" content="KEMMA KFZ-Sachverständiger in Stuttgart – Unabhängige Kfz-Gutachten bei Unfall, Schaden & Fahrzeugbewertung. Bei unverschuldetem Unfall kostenlos. ☎ 0155 671 223 54">
   <meta name="keywords" content="KFZ Gutachter Stuttgart, KFZ Sachverständiger Stuttgart, Unfallgutachten Stuttgart, Schadengutachten Stuttgart, Wertgutachten Stuttgart, Autogutachter Stuttgart, Kfz-Gutachter Möhringen, unabhängiger Gutachter Stuttgart">
   <link rel="canonical" href="https://kemma-gutachten.de/">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="geo.region" content="DE-BW">
-  <meta name="geo.placename" content="Stuttgart">
-  <meta name="geo.position" content="48.7243;9.1518">
-  <meta name="ICBM" content="48.7243, 9.1518">
+  <meta name="geo.placename" content="Stuttgart-Möhringen">
+  <meta name="geo.position" content="48.7267;9.1536">
+  <meta name="ICBM" content="48.7267, 9.1536">
+  <link rel="alternate" hreflang="de" href="https://kemma-gutachten.de/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -33,95 +34,111 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://kemma-gutachten.de/#business",
-    "name": "KEMMA KFZ-Sachverständiger",
-    "alternateName": "KEMMA Gutachten",
-    "description": "Unabhängiger KFZ-Sachverständiger in Stuttgart. Unfallgutachten, Schadengutachten, Wertgutachten und Kostenvoranschläge. Bei unverschuldetem Unfall kostenlos.",
-    "url": "https://kemma-gutachten.de",
-    "telephone": "+4915567122354",
-    "email": "info@kemma-gutachten.de",
-    "image": "https://kemma-gutachten.de/img/logo.png",
-    "logo": "https://kemma-gutachten.de/img/logo.png",
-    "priceRange": "€€",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Stuttgart",
-      "addressRegion": "Baden-Württemberg",
-      "addressCountry": "DE"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 48.7243,
-      "longitude": 9.1518
-    },
-    "areaServed": [
+    "@graph": [
       {
-        "@type": "City",
-        "name": "Stuttgart"
+        "@type": "LocalBusiness",
+        "@id": "https://kemma-gutachten.de/#business",
+        "name": "KEMMA KFZ-Sachverständiger",
+        "alternateName": "KEMMA Gutachten",
+        "description": "Unabhängiger KFZ-Sachverständiger in Stuttgart-Möhringen. Unfallgutachten, Schadengutachten, Wertgutachten und Kostenvoranschläge. Bei unverschuldetem Unfall kostenlos.",
+        "url": "https://kemma-gutachten.de",
+        "telephone": "+4915567122354",
+        "email": "info@kemma-gutachten.de",
+        "image": "https://kemma-gutachten.de/img/logo.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://kemma-gutachten.de/img/logo.png"
+        },
+        "priceRange": "€€",
+        "currenciesAccepted": "EUR",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Stuttgart",
+          "addressRegion": "Baden-Württemberg",
+          "addressCountry": "DE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 48.7267,
+          "longitude": 9.1536
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Stuttgart"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Region Stuttgart"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "KFZ-Gutachten Leistungen",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Unfallgutachten",
+                "description": "Ermittlung von Schadenumfang, Reparaturkosten, Wertminderung und Nutzungsausfall nach Verkehrsunfall."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Schadengutachten",
+                "description": "Vollständige Schadendokumentation als Grundlage für Reparatur oder Abrechnung."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Wertgutachten",
+                "description": "Fahrzeugbewertung für Kauf, Verkauf, Versicherung, Leasingrückgabe und Oldtimer."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Kostenvoranschlag",
+                "description": "Qualifizierte Reparaturkostenschätzung als Entscheidungsgrundlage."
+              }
+            }
+          ]
+        },
+        "memberOf": {
+          "@type": "Organization",
+          "name": "DGuSV – Deutscher Gutachter- und Sachverständigen Verband"
+        },
+        "sameAs": []
       },
       {
-        "@type": "State",
-        "name": "Baden-Württemberg"
-      }
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "KFZ-Gutachten Leistungen",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Unfallgutachten",
-            "description": "Ermittlung von Schadenumfang, Reparaturkosten, Wertminderung und Nutzungsausfall nach Verkehrsunfall."
-          }
+        "@type": "WebSite",
+        "@id": "https://kemma-gutachten.de/#website",
+        "url": "https://kemma-gutachten.de",
+        "name": "KEMMA KFZ-Sachverständiger",
+        "publisher": {
+          "@id": "https://kemma-gutachten.de/#business"
         },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Schadengutachten",
-            "description": "Vollständige Schadendokumentation als Grundlage für Reparatur oder Abrechnung."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Wertgutachten",
-            "description": "Fahrzeugbewertung für Kauf, Verkauf, Versicherung, Leasingrückgabe und Oldtimer."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Kostenvoranschlag",
-            "description": "Qualifizierte Reparaturkostenschätzung als Entscheidungsgrundlage."
-          }
-        }
-      ]
-    },
-    "memberOf": {
-      "@type": "Organization",
-      "name": "Deutscher Gutachter- und Sachverständigen Verband (DGuSV)"
-    },
-    "sameAs": []
-  }
-  </script>
-
-  <!-- BreadcrumbList Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+        "inLanguage": "de-DE"
+      },
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Startseite",
-        "item": "https://kemma-gutachten.de/"
+        "@type": "WebPage",
+        "@id": "https://kemma-gutachten.de/#webpage",
+        "url": "https://kemma-gutachten.de",
+        "name": "KFZ Gutachter Stuttgart | KEMMA – Unabhängiger Sachverständiger",
+        "isPartOf": {
+          "@id": "https://kemma-gutachten.de/#website"
+        },
+        "about": {
+          "@id": "https://kemma-gutachten.de/#business"
+        },
+        "description": "Unabhängiger KFZ-Sachverständiger in Stuttgart-Möhringen. Unfallgutachten, Schadengutachten, Wertgutachten – bei unverschuldetem Unfall kostenlos.",
+        "inLanguage": "de-DE"
       }
     ]
   }
@@ -645,7 +662,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="footer-copy">&copy; 2025 KEMMA KFZ-Sachverständiger</div>
+        <div class="footer-copy">&copy; 2026 KEMMA KFZ-Sachverständiger</div>
         <div class="footer-legal">
           <a href="impressum.html">Impressum</a>
           <a href="datenschutz.html">Datenschutz</a>
