@@ -167,20 +167,6 @@
     <input name="message">
   </form>
 
-  <!-- PASSWORD GATE -->
-  <div id="passwordGate" class="pw-gate">
-    <div class="pw-gate-card">
-      <img src="img/logo.png" alt="KEMMA" class="pw-gate-logo">
-      <h1 class="pw-gate-title">In Bearbeitung</h1>
-      <p class="pw-gate-text">Diese Website wird gerade überarbeitet.<br>Zugang nur mit Passwort.</p>
-      <form id="pwForm" class="pw-gate-form">
-        <input type="password" id="pwInput" class="pw-gate-input" placeholder="Passwort eingeben" autocomplete="off">
-        <button type="submit" class="pw-gate-btn">Zugang</button>
-      </form>
-      <p id="pwError" class="pw-gate-error"></p>
-    </div>
-  </div>
-
 
   <!-- SVG Sprite -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -674,32 +660,5 @@
   </footer>
 
   <script src="script.js"></script>
-  <script>
-    (function() {
-      var gate = document.getElementById('passwordGate');
-      var form = document.getElementById('pwForm');
-      var input = document.getElementById('pwInput');
-      var error = document.getElementById('pwError');
-      if (sessionStorage.getItem('kemma_access') === '1') {
-        gate.style.display = 'none';
-        document.body.classList.remove('pw-locked');
-      } else {
-        document.body.classList.add('pw-locked');
-      }
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        if (input.value === 'malakas') {
-          sessionStorage.setItem('kemma_access', '1');
-          gate.style.opacity = '0';
-          document.body.classList.remove('pw-locked');
-          setTimeout(function() { gate.style.display = 'none'; }, 400);
-        } else {
-          error.textContent = 'Falsches Passwort';
-          input.value = '';
-          input.focus();
-        }
-      });
-    })();
-  </script>
 </body>
 </html>
