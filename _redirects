@@ -1,0 +1,10 @@
+# Interne Repo-Dateien nicht öffentlich ausliefern
+/agents/*              /404.html  404!
+/claude-code-skills/*  /404.html  404!
+/commands/*            /404.html  404!
+/docs/*                /404.html  404!
+/skills/*              /404.html  404!
+/templates/*           /404.html  404!
+/README.md             /404.html  404!
+/CHANGELOG.md          /404.html  404!
+/CLAUDE-TEMPLATE.md    /404.html  404!
