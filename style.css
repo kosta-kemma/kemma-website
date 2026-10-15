@@ -474,6 +474,14 @@ button, input, select, textarea { font-family: inherit; font-size: inherit; }
   white-space: nowrap;
 }
 
+.hero-footnote {
+  margin-top: 16px;
+  max-width: 520px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-light);
+}
+
 /* === HERO FORM === */
 .hero-form-card {
   background: var(--bg-card);
