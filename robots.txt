@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kemma-gutachten.de/sitemap.xml
+Sitemap: https://kemma-kfzgutachten.de/sitemap.xml

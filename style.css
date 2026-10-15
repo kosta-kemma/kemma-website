@@ -1,3 +1,37 @@
+/* === FONTS (lokal gehostet, Variable Fonts) === */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('fonts/montserrat-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('fonts/montserrat-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('fonts/dm-sans-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('fonts/dm-sans-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* === RESET & BASE === */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -529,6 +563,24 @@ button, input, select, textarea { font-family: inherit; font-size: inherit; }
 .form-success h3 { font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 8px; }
 .form-success p { font-size: 0.9375rem; color: var(--text-light); }
 
+.form-privacy-note {
+  margin-top: 12px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-light);
+}
+
+.form-privacy-note a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.form-privacy-note a:hover { color: var(--primary-dark); }
+
+/* Hinweis nach erfolgreichem Absenden ausblenden */
+form:has(.form-success.show) .form-privacy-note { display: none; }
+
 /* === TRUST BAR === */
 .trust-bar { padding: 48px 0; background: var(--bg); border-bottom: 1px solid var(--border-light); }
 .trust-bar .container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
@@ -1026,6 +1078,24 @@ button, input, select, textarea { font-family: inherit; font-size: inherit; }
 
 .legal-page strong {
   color: var(--text);
+}
+
+.legal-page .legal-note {
+  background: var(--primary-light);
+  border: 1px solid var(--primary);
+  border-left-width: 4px;
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  margin: 24px 0;
+  color: var(--text);
+}
+
+.legal-page .legal-stand {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 2px solid var(--border-light);
+  font-size: 0.8125rem;
+  color: var(--text-lighter);
 }
 
 /* === SCROLL REVEAL === */
